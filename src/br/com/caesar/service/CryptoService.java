@@ -41,7 +41,7 @@ public class CryptoService {
 		phrase = phrase.toLowerCase();
 
 		for (int index = 0; index < phrase.length(); index++) {
-			var character = phrase.charAt(index);
+			Character character = phrase.charAt(index);
 			handledPhrase.append(getReplacement(String.valueOf(character), positions, encrypt));
 		}
 

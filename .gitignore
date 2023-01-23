@@ -1,5 +1,7 @@
-*.class
 .bin
-.classpath
+.idea
 .project
+.classpath
+
+*.class
 caesar-crypt.iml

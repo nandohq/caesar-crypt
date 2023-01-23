@@ -2,6 +2,7 @@ package br.com.caesar.controller;
 
 import br.com.caesar.utils.Utils;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public enum MenuOption {
@@ -35,7 +36,7 @@ public enum MenuOption {
   }
 
   public static List<String> numbers() {
-    return Stream.of(MenuOption.values()).map(MenuOption::number).toList();
+    return Stream.of(MenuOption.values()).map(MenuOption::number).collect(Collectors.toList());
   }
 
 }
